@@ -10,13 +10,16 @@
     />
     <script defer src="render.js"></script>
   </head>
-  <body>
+  <body class="content">
     <h1>Screen Recorder</h1>
 
     <video></video>
 
-    <button id="startRecordingButton">Start</button>
-    <button id="stopRecordingButton">Stop</button>
+    <button id="startRecordingButton" class="button is-primary">Start</button>
+    <button id="stopRecordingButton" class="button is-warning">Stop</button>
+
+    <br>
+
     <label name="videoResolution"></label>
     <select name="videoResolution" id="videoResolution">
       <option value="Default">Default</option>
@@ -26,5 +29,10 @@
       <option value="720p">720p</option>
       <option value="480p">480p</option>
     </select>
+
+    <hr/> 
+
+    <button id="selectVideoButton" class="button is-text">Select a Video Source</button>
+
   </body>
 </html>
